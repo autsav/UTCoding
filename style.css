@@ -155,7 +155,9 @@ textarea:focus{
        transition: 0.4s;
        margin-top: 72px;
        width: 100%;
-       text-align: center;
+       text-align: center;  
+       opacity: 0;
+       pointer-events: none;
    }
    #slideout-menu ul{
        list-style: none;
@@ -299,9 +301,9 @@ footer #social-media-footer ul li:hover a .fa-github{
     #menu-icon {
         display: flex;
     }
-    /* #slideout-menu {
+    #slideout-menu {
         display: block;
-    } */
+    }
     #searchbox{
         display: none;
     }
