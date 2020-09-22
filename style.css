@@ -221,6 +221,15 @@ textarea:focus{
 .card .card-description{
     padding: 0 8px;
 }
+.card-meta-blogpost{
+    color: #333;
+    font-size: 14px;
+    padding: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+.card-meta-blogpost a{
+    color: #333;
+}
 /* Button Read More */
 .btn-readmore{
     padding: 8px 24px;
@@ -293,6 +302,76 @@ footer #social-media-footer ul li:hover a .fa-facebook{
 footer #social-media-footer ul li:hover a .fa-github{
     color: #bbb;
 }
+
+/* BLog list page*/
+
+.page-heading{
+    font-size:32px;
+    font-family:'Roboto Condensed', sans-serif ;
+    border-left: 3px solid black;
+    border-right:3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+    margin-top: 120px;
+}
+.page-heading:hover{
+    padding:4px 48px;
+    background:red;
+}
+
+.card-meta{
+    color: #333;
+    font-size: 14px;
+    padding-left:8px;
+    font-family: 'Roboto Slab', serif;
+}
+.card-meta a{
+    color: #333;
+}
+
+/* Pagination */
+
+.pagination{
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+.pagination a{
+    border-top: 3px solid white;
+    display: inline-block;
+    padding: 8px 16px;
+    transition: 0.4s;
+}
+.pagination a:hover{
+    text-decoration: none;
+    border-top:3px solid black;
+}
+ /* Single Blogpost*/
+  #post-container{
+    display: flex;
+  }
+  #blogpost{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      border-left: 1px solid #999;
+  }
+  #blogpost .card{
+      width: 100%;
+  }
+  #blogpost .card-image:hover{
+      box-shadow: none;
+  }
+  /*Sidebar*/
+  #sidebar{
+      background: #333;
+      flex: 1;
+      padding: 8px 16px;
+      color: white;
+      box-shadow: inset 27px 0 51px -18px rgba(0, 0, 0, 0.75);
+  }
+
 /* Media Queries */
 @media (max-width: 900px){
     nav ul {
@@ -307,6 +386,18 @@ footer #social-media-footer ul li:hover a .fa-github{
     #searchbox{
         display: none;
     }
+    #blogpost{
+        width: 100%;
+        border-left: 0;
+    }
+    #sidebar{
+        display: none;
+    }
+}
+/* Comments section */
+#comments-section{
+    border-top:2px solid #eee;
+    padding: 8px;
 }
 
 @media (max-width: 719px){
@@ -337,12 +428,13 @@ footer #social-media-footer ul li:hover a .fa-github{
     footer #right-footer a {
         color:black;
     }
-    footer #social-media-footer a .fa-facebook,
-footer #social-media-footer a .fa-youtube,
-footer #social-media-footer a .fa-github{
-    color: black;
-    transition: 0.4s;
-}
+
+        footer #social-media-footer a .fa-facebook,
+    footer #social-media-footer a .fa-youtube,
+    footer #social-media-footer a .fa-github{
+        color: black;
+        transition: 0.4s;
+    }
 }
 
 @media (max-width:600px){
